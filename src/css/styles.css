@@ -19,6 +19,12 @@ body {
   overflow: hidden;
 }
 
+.gallery-item:hover {
+  border-style: solid;
+  border-color: blueviolet;
+  border-width: 2px;
+}
+
 .gallery-item img {
   width: 100%;
   height: auto;
@@ -28,7 +34,7 @@ body {
 }
 
 .gallery-item:hover img {
-  filter: grayscale(100%) blur(5px);
+  filter: grayscale(100%) blur(2px);
   opacity: 0.4;
   transform: scale(1.1);
 }
@@ -66,15 +72,6 @@ body {
   opacity: 0.8;
   margin-top: 14px;
   font-size: 14px;
-}
-
-.description a {
-  color: rgb(30, 176, 255);
-  text-decoration: none;
-  display: inline-block;
-  opacity: 0;
-  transform: translateY(0px);
-  transition: opacity 0.5s;
 }
 
 .gallery-item:hover .description h2,
