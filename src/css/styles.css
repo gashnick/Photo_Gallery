@@ -14,18 +14,18 @@ body {
   gap: 2px;
 }
 
-.gallery-item {
+.gallery-images {
   position: relative;
   overflow: hidden;
 }
 
-.gallery-item:hover {
+.gallery-images:hover {
   border-style: solid;
   border-color: blueviolet;
   border-width: 2px;
 }
 
-.gallery-item img {
+.gallery-images img {
   width: 100%;
   height: auto;
   display: block;
@@ -33,7 +33,7 @@ body {
   transition: filter 0.5s, transform 0.5s, opacity 0.5s;
 }
 
-.gallery-item:hover img {
+.gallery-images:hover img {
   filter: grayscale(100%) blur(2px);
   opacity: 0.4;
   transform: scale(1.1);
@@ -74,13 +74,13 @@ body {
   font-size: 14px;
 }
 
-.gallery-item:hover .description h2,
-.gallery-item:hover .description p {
+.gallery-images:hover .description h2,
+.gallery-images:hover .description p {
   transform: translateY(-14px);
   opacity: 1;
 }
 
-.gallery-item:hover .description a {
+.gallery-images:hover .description a {
   opacity: 1;
 }
 
@@ -91,12 +91,12 @@ body {
     height: 100vh;
   }
 
-  .gallery-item {
+  .gallery-images {
     flex: 1 1 25%;
     height: 100%;
   }
 
-  .gallery-item img {
+  .gallery-images img {
     height: 100%;
     object-fit: cover;
   }
